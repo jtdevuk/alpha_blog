@@ -5,14 +5,28 @@
 }
 
 .jumbotron {  
-  background-image: url(jumbo_bg.jpg) !important;
+  background-image: url(jumbo_bg.jpg);
   background-size: cover;
+  background-position: center center;
+  margin-top: 25px;
+  margin-right: 100px;
+  margin-left: 100px;
+  height: 550px;
 }
 
-#jumbo {  
-  text-align: center;
-  }
+#jumbo {
+  padding: 70px 0;
+}
 
-#jumbo_text {
-  color: white;
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }
