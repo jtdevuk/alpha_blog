@@ -65,3 +65,4 @@ gem 'bootstrap', '~> 4.4.1'
 
 gem 'jquery-rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
+

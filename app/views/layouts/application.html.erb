@@ -11,9 +11,14 @@
     
   <body class="d-flex flex-column">
     
-    <%= render 'layouts/navigation' %>    
-    <%= render 'layouts/messages' %>
-    <%= yield %>
+    <div id="page-content">
+    <%= render 'layouts/navigation' %> 
+    <%= yield %>       
+    <%= render 'layouts/messages' %>  
+    <%= render 'layouts/footer' %>  
+    </div>      
+    
+    
   </body>  
 </html>
 
