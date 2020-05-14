@@ -1,0 +1,9 @@
+<h1 class="text-center">Listing all categories</h1>
+
+<%= render 'shared/errors', obj: @category %>
+
+<% @categories.each do |category| %>
+<ul>
+<%= link_to "#{category.name}", category_path(category) %>
+</ul>
+<% end %>
