@@ -1,7 +1,27 @@
 <h1 class="text-center">Listing all categories</h1>
 
+<div class="flickr_pagination">
+  <%= will_paginate @articles, :container => false %>
+</div>
+
 <% @categories.each do |category| %>
-<ul>
-<%= link_to "#{category.name}", category_path(category) %>
-</ul>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-8 mt-4">
+        <div class="card shadow mb-5 bg-white rounded text-center">
+          <div class="card-header font-italic">
+            <ul>
+              <%= link_to "#{category.name}", category_path(category) %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <% end %>
+
+
+
+<div class="flickr_pagination">
+  <%= will_paginate @articles, :container => false %>
+</div>
