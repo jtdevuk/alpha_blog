@@ -12,7 +12,7 @@
     <%= will_paginate @articles, :container => false %>
 </div>
 
-<%= render "/articles/article" %>
+<%= render "/articles/article", obj: @user.articles %>
 
 <div class="flickr_pagination">
     <%= will_paginate @articles, :container => false %>

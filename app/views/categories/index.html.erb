@@ -12,6 +12,9 @@
           <div class="card-header font-italic">
             <ul>
               <%= link_to "#{category.name}", category_path(category) %>
+              <p>
+                <small><%= pluralize(category.articles.count, "article") %></small>
+              </p>
             </ul>
           </div>
         </div>
@@ -19,8 +22,6 @@
     </div>
   </div>
 <% end %>
-
-
 
 <div class="flickr_pagination">
   <%= will_paginate @articles, :container => false %>
