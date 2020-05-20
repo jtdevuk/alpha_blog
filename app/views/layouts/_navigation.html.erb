@@ -44,8 +44,9 @@
           <% Category.all.each do |category| %>
             <%= link_to category.name, category_path(category), class: "dropdown-item" %>
           <% end %>
-          <div class="dropdown-divider"></div>
+
           <% if logged_in? and current_user.admin? %>
+            <div class="dropdown-divider"></div>
             <%= link_to "Add new category", new_category_path, class: "dropdown-item" %>
           <% end %>
         </div>
